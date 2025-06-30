@@ -37,4 +37,24 @@ export default [
       },
     },
   },
+  // 🧪 AJOUT : Configuration Jest spécifique
+  {
+    files: ["**/__tests__/**/*.test.ts"],
+    languageOptions: {
+      globals: {
+        describe: "readonly",
+        it: "readonly",
+        expect: "readonly",
+        beforeEach: "readonly",
+        afterEach: "readonly",
+        beforeAll: "readonly",
+        afterAll: "readonly",
+        jest: "readonly",
+      },
+    },
+    rules: {
+      "no-console": "off", // autorise le console.log dans les tests
+      "@typescript-eslint/no-explicit-any": "warn", // relâche la règle: seulement un avertissement
+    },
+  },
 ];
