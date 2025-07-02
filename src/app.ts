@@ -19,3 +19,5 @@ app.get('/', (_req: Request, res: Response): void => {
         <h1> Bookstore API </h1>
         <p><a href="/health"> Health Check </a></p>`);
 });
+
+export default app;
