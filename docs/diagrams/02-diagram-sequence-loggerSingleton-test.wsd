@@ -95,7 +95,7 @@ note right of Test
   - Pret pour la production
 end note
 
-Test -> Test : expect(logger.transports).toHavelength(3)
+Test -> Test : expect(logger.transports).toHaveLength(3)
 
 note right of Test
   **FONCTIONNEL**
