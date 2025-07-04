@@ -33,7 +33,7 @@ describe('ApiError', () => {
     // GIVEN
     const error = new ApiError('Test error', 400, { password: 'secretPanda' });
 
-    const json = error.toJson();
+    const json = error.toJSON();
 
     // THEN
     expect(json.message).toBe('Test error');
