@@ -16,7 +16,7 @@ describe('ApiError', () => {
     const error = new ApiError('Test error', 401, { userId: '98' });
 
     // THEN
-    expect(error.additionalInfo).toBe({ userId: '98' });
+    expect(error.additionalInfo).toStrictEqual({ userId: '98' });
   });
 
   it('should support method chaining', () => {
